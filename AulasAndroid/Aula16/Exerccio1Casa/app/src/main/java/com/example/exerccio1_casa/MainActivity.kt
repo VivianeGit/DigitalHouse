@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity() {
 
         btnExibir.setOnClickListener {
             val resultadoDoNome = etAcao.text.toString()
-
             when {
                 resultadoDoNome.isNotEmpty() -> {
                     txtTexto.visibility = View.VISIBLE
