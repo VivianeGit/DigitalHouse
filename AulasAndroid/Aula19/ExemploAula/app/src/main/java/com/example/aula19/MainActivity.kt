@@ -1,5 +1,6 @@
-package com.example.exercicio3_casa
+package com.example.aula19
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -9,11 +10,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btnCalcular.setOnClickListener {
-            val calcular = etAcao.text.toString().toDouble()*etAcao1.text.toString().toDouble()
-            val resultado = "R$$calcular"
-            txtTexto.text = resultado
-
-        }
+      button.setOnClickListener  {
+          val intent = Intent(this, MainActivity2::class.java)
+          startActivity(intent)
+      }
     }
-} 
+}
